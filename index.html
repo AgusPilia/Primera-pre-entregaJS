@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
-    <script src="/js/carritoDeCompras.js"></script>
+    <title>Carrito de compras</title>
 </head>
 
 <body>
+    <h1>Carrito de compras</h1>
+    <ul id="productos">
+        <li>
+            <h2>Producto 1</h2>
+            <p>Precio: $10</p>
+            <button onclick="agregarProducto('Producto 1', 10)">Agregar al carrito</button>
+        </li>
+        <li>
+            <h2>Producto 2</h2>
+            <p>Precio: $20</p>
+            <button onclick="agregarProducto('Producto 2', 20)">Agregar al carrito</button>
+        </li>
+        <li>
+            <h2>Producto 3</h2>
+            <p>Precio: $30</p>
+            <button onclick="agregarProducto('Producto 3', 30)">Agregar al carrito</button>
+        </li>
+    </ul>
+    <h2>Carrito de compras</h2>
+    <ul id="carrito"></ul>
+    <h2>Total: <span id="total">0</span></h2>
 
+    <script src="./js/segundaPreEntrega-Pilia.js"></script>
 </body>
 
 </html>
